@@ -9,6 +9,11 @@ def index():
     return render_template("index.html")
 
 
+# @app.get("/menu/")
+# def menu():
+#     return render_template("menu.html", pizza_1="Пепероні", pizza_2="Класична", pizza_3="Моцарела")
+
+
 @app.get("/menu/")
 def menu():
     context = {
